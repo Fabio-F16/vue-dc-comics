@@ -74,7 +74,23 @@
         </div>
       </div>
     </div>
-    <div class="bottom-footer"></div>
+
+    <div class="bottom-footer">
+      <div class="container">
+        <div>
+          <button>SIGN-UP NOW!</button>
+        </div>
+
+        <div class="icons">
+          <h3>FOLLOW US</h3>
+          <img src="../assets/img/footer-facebook.png" alt="Facebook" />
+          <img src="../assets/img/footer-twitter.png" alt="Twitter" />
+          <img src="../assets/img/footer-youtube.png" alt="Youtube" />
+          <img src="../assets/img/footer-pinterest.png" alt="Pinterest" />
+          <img src="../assets/img/footer-periscope.png" alt="Periscope" />
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -123,6 +139,32 @@ export default {};
     font-size: 0.8rem;
     list-style-type: none;
     color: grey;
+  }
+}
+.bottom-footer {
+  background-color: #2a2a2a;
+  padding: 30px 0px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      color: white;
+      padding: 10px;
+      background-color: #2a2a2a;
+      border: 2px solid #0c7cec;
+      cursor: pointer;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      h3 {
+        color: #0c7cec;
+      }
+    }
+    img {
+      margin-left: 10px;
+    }
   }
 }
 </style>
