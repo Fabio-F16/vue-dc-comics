@@ -25,7 +25,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
   display: flex;
   justify-content: space-between;
@@ -34,10 +34,15 @@ header {
 }
 ul {
   display: flex;
-}
-ul li {
-  list-style-type: none;
-  padding-left: 20px;
-  font-size: 0.8rem;
+  gap: 20px;
+
+  li {
+    list-style-type: none;
+    font-size: 0.8rem;
+    &:hover {
+      color: #0c7cec;
+      border-bottom: 2px solid #0c7cec;
+    }
+  }
 }
 </style>

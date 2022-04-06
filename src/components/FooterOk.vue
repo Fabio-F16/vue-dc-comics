@@ -129,7 +129,7 @@ export default {};
   }
   h3 {
     color: white;
-    margin-bottom: 10px;
+    margin: 10px 0px;
   }
   div {
     margin-right: 25px;
