@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderOk />
-    <MainOk />
+    <MainOk :products="cardGame" />
     <FooterOk />
   </div>
 </template>
@@ -10,9 +10,15 @@
 import HeaderOk from "./components/HeaderOk.vue";
 import MainOk from "./components/MainOk.vue";
 import FooterOk from "./components/FooterOk.vue";
+import cardGame from "@/assets/data/dc-comics.json";
 
 export default {
   name: "App",
+  data() {
+    return {
+      cardGame,
+    };
+  },
   components: {
     HeaderOk,
     MainOk,

@@ -1,19 +1,62 @@
 <template>
-  <main>--> Content goes here</main>
+  <main>
+    <div class="jumbotron"></div>
+    <button class="first-button">CURRENT SERIES</button>
+    <div class="container">
+      <GenerateCard
+        v-for="(item, index) in products"
+        :key="index"
+        :linkImage="item.thumb"
+        :series="item.series"
+      />
+      <button>LOAD MORE</button>
+    </div>
+  </main>
 </template>
 
 <script>
-export default {};
+import GenerateCard from "@/components/GenerateCard.vue";
+export default {
+  name: "MainOk",
+  props: {
+    products: Array,
+  },
+  components: {
+    GenerateCard,
+  },
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
 main {
   background-color: black;
-  height: 150px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5rem;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+    button {
+      padding: 5px 30px;
+      margin-top: 10px;
+      background-color: #0c7cec;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+.jumbotron {
+  height: 400px;
+  background-image: url("../assets/img/jumbotron.jpg");
+  background-position: top;
+}
+.first-button {
+  position: relative;
+  bottom: 15px;
+  font-size: 1.2rem;
+  background-color: #0c7cec;
+  color: white;
+  padding: 5px 30px;
+  margin-left: 150px;
 }
 </style>
