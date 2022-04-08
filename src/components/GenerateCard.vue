@@ -9,7 +9,6 @@
 export default {
   name: "GenerateCard",
   props: {
-    dataGame: Object,
     linkImage: String,
     series: String,
   },
@@ -18,7 +17,6 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  border: 1px solid black;
   width: calc(100% / 6);
   img {
     height: 150px;

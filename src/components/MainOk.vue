@@ -29,11 +29,12 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  background-color: black;
+  background-color: rgb(23, 22, 22);
   color: white;
   .container {
     display: flex;
     flex-wrap: wrap;
+
     padding: 15px;
     justify-content: center;
     button {
@@ -45,6 +46,7 @@ main {
     }
   }
 }
+
 .jumbotron {
   height: 400px;
   background-image: url("../assets/img/jumbotron.jpg");
